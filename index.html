@@ -27,7 +27,12 @@
           <a class="logo" href="./index.html"
             >Web<span class="logo-dark-part">Studio</span></a
           >
-          <ul class="navigation-menu visually-hidden">
+          <button type="button" class="open-menu-btn">
+            <svg class="menu-icon" width="17" height="14.5">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
+          <ul class="navigation-menu">
             <li>
               <a class="navigation-link current" href="./index.html">Studio</a>
             </li>
@@ -35,7 +40,7 @@
             <li><a class="navigation-link" href="">Contacts</a></li>
           </ul>
         </nav>
-        <address class="contacts visually-hidden">
+        <address class="contacts">
           <ul class="contacts-list">
             <li>
               <a class="contacts-link" href="mailto:info@devstudio.com"
@@ -65,7 +70,7 @@
           <h2 class="visually-hidden">Feature</h2>
           <ul class="feature-list">
             <li class="feature-item">
-              <div class="feature-icon-wrapper visually-hidden">
+              <div class="feature-icon-wrapper">
                 <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
@@ -77,7 +82,7 @@
               </p>
             </li>
             <li class="feature-item">
-              <div class="feature-icon-wrapper visually-hidden">
+              <div class="feature-icon-wrapper">
                 <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
@@ -89,7 +94,7 @@
               </p>
             </li>
             <li class="feature-item">
-              <div class="feature-icon-wrapper visually-hidden">
+              <div class="feature-icon-wrapper">
                 <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
@@ -101,7 +106,7 @@
               </p>
             </li>
             <li class="feature-item">
-              <div class="feature-icon-wrapper visually-hidden">
+              <div class="feature-icon-wrapper">
                 <svg class="feature-icon" width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
@@ -612,7 +617,7 @@
           </div>
           <div class="container-accept-terms">
             <input
-              class="form-input-checkbox visually-hidden"
+              class="form-input-checkbox"
               type="checkbox"
               name="user-privacy"
               id="user-privacy"

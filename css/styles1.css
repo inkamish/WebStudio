@@ -70,6 +70,8 @@ section {
   }
 }
 
+/* --------------Header---------- */
+
 header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -83,7 +85,8 @@ header {
   }
 }
 
-.logo {
+.logo,
+.footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -166,8 +169,17 @@ header {
 .container-menu {
   position: relative;
   width: 320px;
-  padding: 72px 16px 40px;
+  padding: 72px 24px 40px 16px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .close-mobile-btn {
@@ -199,7 +211,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
 }
 
 .navigation-menu {
@@ -271,7 +282,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 @media screen and (min-width: 768px) {
@@ -319,6 +329,10 @@ header {
   color: #404bbf;
 }
 
+/* ------------------------------ */
+
+/* --------------Hero------------ */
+
 .hero {
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -330,7 +344,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 72px 0;
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -353,7 +367,7 @@ header {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/tablet-background.jpg);
-    min-width: 768px;
+    max-width: 768px;
     padding: 112px 0;
   }
 }
@@ -442,6 +456,10 @@ header {
 .hero-button:focus {
   background-color: #404bbf;
 }
+
+/* ------------------------------ */
+
+/* ------------Feature----------- */
 
 .visually-hidden {
   position: absolute;
@@ -544,6 +562,10 @@ header {
     font-weight: 400;
   }
 }
+
+/* ------------------------------ */
+
+/* -------------Team------------- */
 
 .team {
   background-color: #f4f4fd;
@@ -651,6 +673,10 @@ header {
   fill: #f4f4fd;
 }
 
+/* ------------------------------ */
+
+/* -----------Portfolio---------- */
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -755,6 +781,10 @@ header {
   padding: 32px 16px;
 }
 
+/* ------------------------------ */
+
+/* -------------Footer----------- */
+
 .footer {
   background-color: #2e2f42;
   padding: 96px 0;
@@ -795,8 +825,15 @@ header {
 }
 
 .footer-logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 16px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    text-align: left;
+  }
 }
 
 .logo-studio-white {
@@ -960,6 +997,10 @@ input[type="email"]::placeholder {
   fill: white;
   margin-left: 16px;
 }
+
+/* ------------------------------ */
+
+/* --------Contact form---------- */
 
 .modal-overlay {
   background-color: #2e2f4266;
